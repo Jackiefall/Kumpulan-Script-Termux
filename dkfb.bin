@@ -84,8 +84,8 @@ def loginSC():
 	print"\033[1;97mSilahkan login SC nya dulu bosque\n"
 	username = raw_input("\033[1;96m[*] \033[1;97mUsername \033[1;91m: \033[1;92m")
 	password = raw_input("\033[1;96m[*] \033[1;97mPassword \033[1;91m: \033[1;92m")
-	if username =="dark" and password =="fb":
-		print"\033[1;96m[✓] \033[1;92mLogin success"
+	if username =="accespoint" and password =="pahri":
+		print"\033[1;96m[✓] \033[1;92mAcces Granted"
 		time.sleep(1)
 		login()
 	else:
@@ -153,7 +153,7 @@ def login():
 def menu():
 	os.system('clear')
 	try:
-		toket=open('login.txt','r').read()
+		tpt=open('login.txt','r').read()
 	except IOError:
 		os.system('clear')
 		print"\033[1;96m[!] \x1b[1;91mToken invalid"
@@ -810,7 +810,7 @@ def clone_dari_member_group():
 	
 
 def clone_dari_file():
-	global toket
+	global tpt
 	os.system('clear')
 	try:
 		toket=open('login.txt','r').read()
